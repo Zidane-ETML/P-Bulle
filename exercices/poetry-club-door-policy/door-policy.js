@@ -52,7 +52,7 @@ export function frontDoorPassword(word) {
  */
 export function backDoorResponse(line) {
   const lineTrim = line.trim()
-  return lineTrim[lineTrim.length-1]
+  return lineTrim.slice(-1)
 }
 
 /**
